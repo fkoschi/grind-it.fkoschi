@@ -16,9 +16,7 @@ export default function Home() {
   return (
     <div className="flex flex-col h-screen bg-[#664F3F]">
       <div className="flex flex-1 flex-col xl:m-6 2xl:m-8 bg-white lg:rounded-xl shadow-lg">
-        
         <div className="flex lg:flex-1 lg:gap-0 gap-16 p-6 flex-col lg:flex-row justify-center items-center">
-          
           <div className="flex flex-1 flex-col items-start pl-4 mt-12 lg:mt-0 lg:justify-center lg:order-2">
             <h1 className="text-center text-6xl lg:text-8xl">Grind It</h1>
 
@@ -30,12 +28,18 @@ export default function Home() {
 
             <div className="flex flex-1 mt-8 gap-6">
               <div className="flex flex-1 h-[40px]">
-                <Image
-                  src="/AppStoreDownload.svg"
-                  alt="App Store Download"
-                  width={120}
-                  height={180}
-                />
+                <a
+                  href="https://apps.apple.com/de/app/grind-it/id6740140366"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image
+                    src="/AppStoreDownload.svg"
+                    alt="App Store Download"
+                    width={120}
+                    height={180}
+                  />
+                </a>
               </div>
               <div className="flex flex-1 h-[40px]">
                 <Image
@@ -51,7 +55,6 @@ export default function Home() {
           <div className="flex flex-1 lg:justify-end items-center justify-center h-fit">
             <Iphone15Pro src="./home.png" className="h-[700px]" />
           </div>
-
         </div>
       </div>
     </div>
