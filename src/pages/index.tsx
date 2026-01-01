@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { Source_Sans_3 } from "next/font/google";
 import { motion } from "motion/react";
 import Image from "next/image";
+import BuyMeCoffeeButton from "@/components/BuyMeCoffeeButton";
 
 const sourceSansPro = Source_Sans_3({ subsets: ["latin"] });
 
@@ -89,6 +90,7 @@ export default function Home() {
                 </div>
               </motion.div>
             </div>
+            <BuyMeCoffeeButton />
           </div>
 
           <motion.div
