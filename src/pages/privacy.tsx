@@ -2,12 +2,18 @@ import { Source_Sans_3 } from "next/font/google";
 import { motion } from "motion/react";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 
 const sourceSans = Source_Sans_3({ subsets: ["latin"] });
 
 export default function Privacy() {
   return (
     <div className="flex flex-col min-h-screen">
+      <Head>
+        <title>Privacy Policy - Grind It</title>
+        <meta name="description" content="Privacy policy for the Grind It coffee app. All data stays on your device." />
+      </Head>
+
       {/* Branded Header */}
       <motion.header
         initial={{ opacity: 0, y: -20 }}
