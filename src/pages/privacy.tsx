@@ -19,10 +19,10 @@ export default function Privacy() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: ["easeIn", "easeOut"], type: "spring", delay: 0.1 }}
-        className="bg-[#664F3F] px-6 py-12 text-center"
+        className="bg-[#DDA152] px-6 py-12 text-center"
       >
         <Link href="/" className="inline-block mb-4">
-          <Image src="/logo.png" alt="Grind It" width={60} height={60} className="mx-auto" />
+          <Image src="/logo.png" alt="Grind It" width={100} height={100} className="mx-auto" />
         </Link>
         <h1 className="text-4xl lg:text-5xl text-white">Privacy Policy</h1>
       </motion.header>
@@ -86,12 +86,12 @@ export default function Privacy() {
               If you have any questions about this privacy policy, feel free to
               reach out via{" "}
               <a
-                href="https://www.buymeacoffee.com/fkoschi"
+                href="mailto:hi@fkoschi.de"
                 target="_blank"
                 rel="noreferrer"
                 className="text-[#e89e3f] underline hover:text-[#c8872f]"
               >
-                Buy Me a Coffee
+                Email
               </a>
               .
             </p>

@@ -4,7 +4,6 @@ import { Source_Sans_3 } from "next/font/google";
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import BuyMeCoffeeButton from "@/components/BuyMeCoffeeButton";
 
 const sourceSansPro = Source_Sans_3({ subsets: ["latin"] });
 
@@ -91,7 +90,6 @@ export default function Home() {
                 </div>
               </motion.div>
             </div>
-            <BuyMeCoffeeButton />
           </div>
 
           <motion.div
@@ -106,7 +104,7 @@ export default function Home() {
           </motion.div>
         </div>
       </div>
-      <div className="flex justify-center py-3">
+      <div className="flex flex-1 justify-center">
         <Link
           href="/privacy"
           className={`text-sm text-white/60 hover:text-white/90 transition-colors ${sourceSansPro.className}`}
