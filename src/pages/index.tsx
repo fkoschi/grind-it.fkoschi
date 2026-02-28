@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { Source_Sans_3 } from "next/font/google";
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 
 const sourceSansPro = Source_Sans_3({ subsets: ["latin"] });
 
@@ -102,6 +103,14 @@ export default function Home() {
             <Iphone15Pro src="./home.png" className="h-[700px]" />
           </motion.div>
         </div>
+      </div>
+      <div className="flex flex-1 justify-center">
+        <Link
+          href="/privacy"
+          className={`text-sm text-white/60 hover:text-white/90 transition-colors ${sourceSansPro.className}`}
+        >
+          Privacy Policy
+        </Link>
       </div>
     </div>
   );

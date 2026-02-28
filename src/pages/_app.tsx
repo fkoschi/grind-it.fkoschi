@@ -9,8 +9,10 @@ const tbjSodaberryFont = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={tbjSodaberryFont.className}>
-      <Component {...pageProps} />
-    </main>
+    <>
+      <main className={tbjSodaberryFont.className}>
+        <Component {...pageProps} />
+      </main>
+    </>
   );
 }
