@@ -44,6 +44,8 @@ export default function Support() {
             <p className="mt-4">
               <a
                 href="mailto:hi@fkoschi.de"
+                target="_blank"
+                rel="noreferrer"
                 className="text-[#e89e3f] underline hover:text-[#c8872f]"
               >
                 hi@fkoschi.de
