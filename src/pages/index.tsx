@@ -104,12 +104,19 @@ export default function Home() {
           </motion.div>
         </div>
       </div>
-      <div className="flex flex-1 justify-center">
+      <div className={`flex flex-1 justify-center items-center gap-3 text-sm ${sourceSansPro.className}`}>
         <Link
           href="/privacy"
-          className={`text-sm text-white/60 hover:text-white/90 transition-colors ${sourceSansPro.className}`}
+          className="text-white/60 hover:text-white/90 transition-colors"
         >
           Privacy Policy
+        </Link>
+        <span className="text-white/30">·</span>
+        <Link
+          href="/support"
+          className="text-white/60 hover:text-white/90 transition-colors"
+        >
+          Support
         </Link>
       </div>
     </div>
